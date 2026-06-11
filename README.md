@@ -133,5 +133,16 @@ sales-sense-ai/
 ### 10. Forecast Excel Report
 ![Excel Report](screenshots/10_monthly_forecast_excel_report.png)
 
+## 🚀 Future Roadmap & Enhancements
+- [ ] **LLM AI Agent Assistant**: Chat directly with your sales data and forecast charts.
+- [ ] **Multi-Warehouse Support**: Expand inventory calculations across multiple storage locations.
+- [ ] **Real-Time Data Streams**: Connect directly to live e-commerce databases (e.g. Shopify, PostgreSQL).
+- [ ] **Dockerization**: Complete containerization for the ML training server and Streamlit frontend.
+
+## 🤝 Contributing & Support
+Contributions, issues, and feature requests are welcome! Feel free to open a pull request or check the issues page.
+
+**Show your support:** Give a ⭐️ if this project helped you!
+
 ## License
 MIT License
