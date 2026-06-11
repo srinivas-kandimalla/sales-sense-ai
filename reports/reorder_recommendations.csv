@@ -1,0 +1,11 @@
+SKU,Category,Daily Demand (Avg),Current Stock,Safety Stock (optimal),Reorder Point,EOQ,Days Remaining,Status
+SKU-0562,Apparel,100.18,797,179,880,200,8.0,Low
+SKU-0821,Electronics,48.64,473,44,385,139,9.7,Healthy
+SKU-1134,FMCG,318.16,2931,306,2533,357,9.2,Healthy
+SKU-2201,Home,39.59,288,35,312,126,7.3,Low
+SKU-3305,Electronics,52.81,288,165,535,145,5.5,Low
+SKU-4412,FMCG,325.58,1953,296,2575,361,6.0,Low
+SKU-5501,Apparel,95.74,672,87,757,196,7.0,Low
+SKU-6623,Home,39.87,130,31,310,126,3.3,Low
+SKU-7734,Electronics,48.29,429,47,385,139,8.9,Healthy
+SKU-8891,FMCG,319.88,1176,296,2535,358,3.7,Low
