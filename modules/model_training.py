@@ -22,6 +22,12 @@ def show_model_training():
         show_empty_state()
         return
 
+    # Check if features have been engineered
+    required_features = ["lag_7", "lag_14", "lag_30", "rolling_mean_7", "rolling_mean_30", "month", "weekday", "is_weekend", "is_holiday"]
+    missing_features = [col for col in required_features if col not in df.columns]
+    if missing_features:
+        st.warning("⚠️ **Data Preprocessing Required:** Please navigate to the **Data Preprocessing** tab and run the preprocessing pipeline to generate the necessary time features, lag variables, and public holiday indicators before training models.")
+
     # Visual Model Selection Grid
     st.subheader("1. Select Forecasting Algorithm")
     
@@ -113,6 +119,11 @@ def show_model_training():
     if st.button("🚀 Train Selected Model", type="primary", use_container_width=True):
         p_train = st.progress(0, text="Starting training workflow...")
         
+        if missing_features:
+            p_train.empty()
+            st.error("❌ **Training failed:** Required engineered features are missing. Please go to the **Data Preprocessing** page and run the pipeline first.")
+            st.stop()
+            
         try:
             # Step 1: Loading & validating data
             p_train.progress(25, text="Step 1/4: Loading & validating data...")
