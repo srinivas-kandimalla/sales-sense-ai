@@ -1,9 +1,9 @@
 # SalesSense
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://sales-sense-ai.streamlit.app)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Active-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://sales-sense-ai.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://sales-sense-ai-4yhu.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Active-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://sales-sense-ai-4yhu.onrender.com)
 
-**Live Demo URL:** [https://sales-sense-ai.streamlit.app](https://sales-sense-ai.streamlit.app)
+**Live Demo URL:** [https://sales-sense-ai-4yhu.onrender.com](https://sales-sense-ai-4yhu.onrender.com)
 
 ## Problem Statement
 Traditional inventory management systems struggle to predict consumer demand fluctuations, resulting in expensive stockouts or wasteful capital tied up in excess inventory. SalesSense addresses this by combining advanced machine learning forecasts with a dynamic, safety-stock-driven inventory optimization workflow to streamline operations.
