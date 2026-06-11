@@ -43,6 +43,34 @@ graph TD
 - **Inventory Optimization**: Automatic calculations for safety stock, reorder points, economic order quantity (EOQ), and days of stock remaining with color-coded warning systems and carrying cost savings logs.
 - **Reports**: Quick one-click automated summaries exported as professionally styled PDF (via `fpdf2`) and Excel (via `openpyxl`) spreadsheets.
 
+## Core Optimization Mathematics
+
+SalesSense translates demand forecasts into mathematical inventory decisions using industry-standard Operations Research (OR) formulas:
+
+### 1. Safety Stock ($SS$)
+Protects the supply chain from lead-time demand variability:
+$$SS = z \times \sigma_d \times \sqrt{L}$$
+*Where:*
+- $z$: Service level factor (1.65 for a 95% target fulfillment rate)
+- $\sigma_d$: Standard deviation of daily sales volume demand
+- $L$: Replenishment lead time in days
+
+### 2. Reorder Point ($ROP$)
+The inventory level that triggers a stock replenishment order:
+$$ROP = (\mu_d \times L) + SS$$
+*Where:*
+- $\mu_d$: Average daily demand (forecasted volume)
+- $L$: Replenishment lead time in days
+- $SS$: Safety Stock buffer
+
+### 3. Economic Order Quantity ($EOQ$)
+The optimal order size that minimizes total holding and ordering costs:
+$$EOQ = \sqrt{\frac{2 \times D \times S}{H}}$$
+*Where:*
+- $D$: Annual demand volume (forecasted run-rate)
+- $S$: Order setup cost (shipping, handling, and procurement fees)
+- $H$: Annual holding cost per unit (storage, insurance, and carrying costs)
+
 ## Tech Stack
 
 | Component | Technology |
