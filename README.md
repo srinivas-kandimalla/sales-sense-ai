@@ -8,6 +8,31 @@
 ## Problem Statement
 Traditional inventory management systems struggle to predict consumer demand fluctuations, resulting in expensive stockouts or wasteful capital tied up in excess inventory. SalesSense addresses this by combining advanced machine learning forecasts with a dynamic, safety-stock-driven inventory optimization workflow to streamline operations.
 
+## End-to-End Workflow
+
+This flowchart outlines how raw transaction data is ingested, processed, modeled, and transformed into actionable inventory optimization choices and live dashboard statuses:
+
+```mermaid
+graph TD
+    A["📥 1. Data Ingestion (Upload CSV/XLSX)"] -->|Raw Sales Data| B["⚙️ 2. Data Preprocessing"]
+    B -->|Cleaned Datasets| C["📈 3. Exploratory Data Analysis (EDA)"]
+    B -->|Engineered ML Lags & LSTMs Features| D["🤖 4. Model Training Workbench"]
+    D -->|Best-fit Model Object| E["🔮 5. Demand Forecasting Engine"]
+    E -->|SKU Demand Projections & 95% CI| F["📦 6. Safety Stock & EOQ Optimization"]
+    F -->|Optimized Reorder points & Stock alerts| H["📊 7. Executive Dashboard Monitoring"]
+    F -->|Operations Log| G["📄 8. Automated PDF & Excel Reports"]
+    G --> H
+    
+    style A fill:#1D9E75,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#EF9F27,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#AB63FA,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#FFA15A,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#19D3F3,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#E24B4A,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#FF6692,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#378ADD,stroke:#fff,stroke-width:2px,color:#fff
+```
+
 ## Features
 - **Dashboard**: Real-time business overview with high-level KPI cards, interactive sales trends, category distribution charts, and recent operational alerts.
 - **Data Upload**: Seamless CSV/XLSX file ingestion with column mapping detection, comprehensive validation reporting, and data type checks.
@@ -76,8 +101,37 @@ sales-sense-ai/
     └── style.css
 ```
 
-## Screenshots
-Add screenshots here
+## Project Screenshots
+
+### 1. Dashboard Overview
+![Dashboard](screenshots/01_dashboard_overview.png)
+
+### 2. Data Upload Module
+![Data Upload](screenshots/02_data_upload_module.png)
+
+### 3. Data Preprocessing
+![Data Preprocessing](screenshots/03_data_preprocessing.png)
+
+### 4. Exploratory Data Analysis
+![EDA](screenshots/04_exploratory_data_analysis.png)
+
+### 5. Model Training Results
+![Model Training](screenshots/05_model_training_results.png)
+
+### 6. Sales Forecasting
+![Sales Forecasting](screenshots/06_sales_forecasting.png)
+
+### 7. Inventory Optimization
+![Inventory](screenshots/07_inventory_optimization.png)
+
+### 8. Report Export
+![Report Export](screenshots/08_report_export.png)
+
+### 9. Forecast PDF Report
+![PDF Report](screenshots/09_monthly_forecast_pdf_report.png)
+
+### 10. Forecast Excel Report
+![Excel Report](screenshots/10_monthly_forecast_excel_report.png)
 
 ## License
 MIT License
